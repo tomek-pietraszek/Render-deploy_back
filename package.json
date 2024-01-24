@@ -5,6 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed-records": "node seed/seed_db_records.js",
     "seed-users": "node seed/seed_db_users.js"
