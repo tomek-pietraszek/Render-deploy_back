@@ -17,7 +17,7 @@ const app = express();
 const { PORT = 5000, DB_URI } = process.env;
 
 app
-  .use(cors({ origin: "http://localhost:3000", credentials: true }))
+  .use(cors({ origin: ["http://localhost:3000", "https://record-shop-tomek.onrender.com"], credentials: true }))
   .use(express.json())
   .use(cookieParser())
   .use("/records", recordsRouter)
