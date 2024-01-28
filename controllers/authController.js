@@ -20,7 +20,7 @@ const signToken = (id) =>
       })
     );
   };
-
+ //hello from server
 const createSendToken = (res, status, user) => {
   const jwtToken = signToken(user._id);
 
